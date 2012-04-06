@@ -1,6 +1,6 @@
 (function () {
 
-    var input = $("#input");
+    var input = $("#input textarea");
     var output = $("#output");
     var annotation = $("#annotation");
 
@@ -16,7 +16,7 @@
         })
     }
 
-    var val = ">Ash nazg durbatulûk, ash nazg gimbatul,<\nAsh nazg thrakatulûk agh burzum-ishi krimpatul.";
+    var val = "";
     if (location.hash) {
         input.val(val = decodeURIComponent(location.hash.slice(1)));
     }
